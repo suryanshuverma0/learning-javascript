@@ -25,4 +25,4 @@ console.log(isFinite(55));
 console.log(isFinite("555"));
 console.log(isFinite("str"));
 
-//Number.isNaN() and Number.isFinite() is more reliable than that of the isNaN and isFinite 
+//Number.isNaN() and Number.isFinite() is more reliable than that of the isNaN and isFinite/ 
