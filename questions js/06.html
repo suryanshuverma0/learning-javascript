@@ -9,20 +9,23 @@
     <button onclick="checkPalindrome()">Check Palindrome</button>
   </body>
   <script>
-    /*
-         2. Write a JavaScript function that checks whether a passed string is a palindrome or not?
-         */
-
     function checkPalindrome() {
       const number = prompt("Enter the number");
       const sliceNumber = number.split("");
-      const reverseNum = sliceNumber.reverse();
+      const reverseNum = [...sliceNumber].reverse(); // Create a copy of the array for reverse comparison
       const reverseNumber = parseInt(reverseNum.join(""));
-
-      if (number == reverseNumber) {
-        alert(`${number} is a palindrome`);
+      const detection = 0;
+      for (let i = 0; i < sliceNumber.length; i++) {
+        if (sliceNumber[i] == reverseNum[i]) {
+          detection++;
+        } else {
+          break;
+        }
+      }
+      if (detection == sliceNumber.length) {
+        alert("Palindrome detected");
       } else {
-        alert(`${number} is not a palindrome`);
+        alert("Sorry, not a palindrome");
       }
     }
   </script>

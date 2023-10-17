@@ -7,7 +7,6 @@
   </head>
   <body>
     <button onclick="sortString()">Sort string</button>
-    <button onclick="bubbleSort()">Sort the string</button>
   </body>
   <script>
     /*
@@ -22,22 +21,6 @@
       splitAlphabet.sort();
       const sortedString = splitAlphabet.join("");
       alert(`The sorted string is  ${sortedString}`);
-    }
-
-    function bubbleSort() {
-      const alphabet = prompt("Enter the string");
-      const alphabetArray = alphabet.split(""); // Convert the input string to an array
-      for (let i = 0; i < alphabetArray.length; i++) {
-        for (let j = 0; j <= alphabetArray.length - i; j++) {
-          if (alphabetArray[j] > alphabetArray[j + 1]) {
-            let temp = alphabetArray[j];
-            alphabetArray[j] = alphabetArray[j + 1];
-            alphabetArray[j + 1] = temp;
-          }
-        }
-      }
-      const sortedString = alphabetArray.join(""); // Convert the sorted array back to a string
-      alert(`The sorted string is: ${sortedString}`);
     }
   </script>
 </html>
