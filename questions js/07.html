@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="sortString()">Sort string</button>
+    <button onclick="bubbleSort()">Sort the string</button>
+  </body>
+  <script>
+    /*
+     4. Write a JavaScript function that returns a string that has letters in alphabetical order.
+    Example string : 'webmaster'
+    Expected Output : 'abeemrstw'
+    Assume punctuation and numbers symbols are not included in the passed string.  */
+
+    function sortString() {
+      const alphabet = prompt("Enter the string");
+      const splitAlphabet = alphabet.split("");
+      splitAlphabet.sort();
+      const sortedString = splitAlphabet.join("");
+      alert(`The sorted string is  ${sortedString}`);
+    }
+
+    function bubbleSort() {
+      const alphabet = prompt("Enter the string");
+      const alphabetArray = alphabet.split(""); // Convert the input string to an array
+      for (let i = 0; i < alphabetArray.length; i++) {
+        for (let j = 0; j <= alphabetArray.length - i; j++) {
+          if (alphabetArray[j] > alphabetArray[j + 1]) {
+            let temp = alphabetArray[j];
+            alphabetArray[j] = alphabetArray[j + 1];
+            alphabetArray[j + 1] = temp;
+          }
+        }
+      }
+      const sortedString = alphabetArray.join(""); // Convert the sorted array back to a string
+      alert(`The sorted string is: ${sortedString}`);
+    }
+  </script>
+</html>

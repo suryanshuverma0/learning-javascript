@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+  </body>
+  <script>
+    /*
+         2. Write a JavaScript function that checks whether a passed string is a palindrome or not?
+         */
+
+    function checkPalindrome() {
+      const number = prompt("Enter the number");
+      const sliceNumber = number.split("");
+      const reverseNum = sliceNumber.reverse();
+      const reverseNumber = parseInt(reverseNum.join(""));
+
+      if (number == reverseNumber) {
+        alert(`${number} is a palindrome`);
+      } else {
+        alert(`${number} is not a palindrome`);
+      }
+    }
+  </script>
+</html>
