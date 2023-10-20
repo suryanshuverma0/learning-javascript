@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+         <div id="overview">
+
+         </div>
+  </body>
+  <script>
+    // parent of <body> is <html>
+    alert(document.body.parentNode === document.documentElement); // true
+
+    // after <head> goes <body>
+    alert(document.head.nextSibling); // HTMLBodyElement
+
+    // before <body> goes <head>
+    alert(document.body.previousSibling);
+
+    const elem = document.getElementById("overview");
+    alert(elem); 
+    elem = 5;
+    alert(elem);
+  </script>
+</html>

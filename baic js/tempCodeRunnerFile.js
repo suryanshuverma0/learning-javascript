@@ -1,16 +1,9 @@
-console.log(isNaN("str"));
-// console.log(isNaN(123));
-// console.log(isNaN(NaN));
-// console.log(isNaN(true));
-// console.log(isNaN(undefined));
-// console.log(isNaN(null));
-// console.log(isNaN({}));
-// console.log(isNaN([]));
-// console.log(isNaN([1, 2, 3]));
-// console.log(isNaN([1, 2, 3]));
-// console.log(isNaN([1, 2, 3]));
-// console.log(isNaN({ a: 1 }));
-// console.log(isNaN({ a: 1, b: 2 }));
-// console.log(isNaN({ a: 1, b: 2 }));
-// console.log(isNaN({ a: 1, b: 2 }));
-// console.log(isNaN(function () { }));
+const population = {
+//          "male": 4, 
+//          "felale" : 5,
+//          "other": 3,
+// }
+
+// for(const key in population){
+//          console.log(`${key} : ${population[key]}`);
+// }
