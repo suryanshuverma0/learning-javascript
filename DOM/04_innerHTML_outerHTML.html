@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+</head>
+<body>
+         <h1 id="intro">let's demonstrate the innerHTML and outerHTML property</h1>
+         <p id="demo">This is a sample paragraph</p>
+
+         <p id="demo2">Now let's see the outerHTML property</p>
+</body>
+<script>
+         let a = document.getElementById('intro').innerHTML;
+         alert(a);
+
+         document.getElementById('demo').innerHTML =  'we tried replacing the inner content of the paragraph with the innerHTML property.'
+
+         let b = document.getElementById('demo2');
+         b.outerHTML = '<h1>Hello</h1>  I am suryanshu';
+</script>
+</html>

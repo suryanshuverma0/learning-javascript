@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="things">
+        <input type="text" aria-label="tasks" id="input" />
+        <button id="add" type="button">Add</button>
+      </div>
+      <div class="list">
+        <ul id="lists">
+          <li>sth</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById("input");
+    const add_btn = document.getElementById("add");
+    const list = document.getElementById("lists");
+    //adding thins to existing lists.
+
+    add_btn.addEventListener("click", function () {
+      if (input.value.trim() !== "") {
+        const task = document.createElement("li");
+        task.textContent = input.value;
+        list.appendChild(task);
+
+        input.value = "";
+      }
+    });
+  </script>
+</html>

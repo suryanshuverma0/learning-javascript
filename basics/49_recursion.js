@@ -49,3 +49,5 @@ function calculateSalary(department) {
 }
 
 console.log(calculateSalary(company));
+
+//This is one of the most important concept to understand and has real world implementation lile adding list of the products 

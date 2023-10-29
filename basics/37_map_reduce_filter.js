@@ -1,11 +1,11 @@
 //Map
-/*
+
 let arr= [22 ,45, 33, 56];
 let a= arr.map((value , index , array)=>{
          console.log(value, index , array);
          return value+index;
 })
-map creates new array
+// map creates new array
 console.log(a);
 
 let array1 =[33 , 55 , 67];
@@ -14,10 +14,10 @@ let mapping = array1.map((value, index , array) =>{
         // return value + index+ array1;
          console.log(value, index);
 })
-*/
+
 
 //Filter
-/*
+
 let numbers =[44 , 32 , 21 , 67 , 98 , 53, 59];
 let even = numbers.filter((value)=>{
          return (value % 2 ==0);
@@ -35,7 +35,7 @@ let partyEntry = age.filter((value)=>{
          }
 })
 console.log(`You can enter to party since your age is ${partyEntry}`);
-*/
+
 
 //Reduce
 let n=[3,2,1];

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="things">
+        <input type="text" aria-label="tasks" id="input" />
+        <button id="add" type="button">Add</button>
+        <ul id="tasks"></ul>
+      </div>
+    </div>
+  </body>
+  <script>
+
+    function removeBtn(task){
+      const removeBtn = document.createElement('button');
+      removeBtn.textContent = "Remove";
+      removeBtn.addEventListener('click', function(){
+        task.remove();
+      });
+      return removeBtn;
+    }
+    const input = document.getElementById("input");
+    const add_btn = document.getElementById("add");
+    const listedList = document.getElementById("tasks");
+    //adding thins to new lists.
+
+    add_btn.addEventListener("click", function () {
+      if (input.value.trim() !== "") {
+        const task = document.createElement("li");
+        task.textContent = input.value;
+
+        const removeButton = removeBtn(task);
+        task.appendChild(removeButton);
+        listedList.appendChild(task);
+        
+        input.value = "";
+      }
+    });
+
+    
+
+    
+  </script>
+</html>

@@ -45,3 +45,6 @@ gend.forEach((gendValue) =>{
 });
 
 console.log(populationTotal);
+
+
+
