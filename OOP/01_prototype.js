@@ -8,12 +8,12 @@ let a ={
          }
 }
 
-p ={
+p = {
          programming : true,
          engineering : true,
 }
 
-a.__proto__ =p;
+a.__proto__ = p;
 console.log(a.programming, a.engineering);  //first it searches in object a  and if not found it searches in object p theis is prototype
 
 p.__proto__ ={
