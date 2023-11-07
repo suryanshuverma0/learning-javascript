@@ -1,0 +1,2 @@
+eagle.eat();
+// eagle.fly();

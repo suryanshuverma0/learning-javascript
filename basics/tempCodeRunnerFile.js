@@ -1,9 +1,8 @@
-const population = {
-//          "male": 4, 
-//          "felale" : 5,
-//          "other": 3,
-// }
+//REegular expression are used to manipulate the string.
+// //REegular expression using rerex literals
+// const string = "I am a programmer and I love JavaScript."
+// const regex = /love/;
+// const result = string.match(regex);
+// console.log(result);
 
-// for(const key in population){
-//          console.log(`${key} : ${population[key]}`);
-// }
+// const testResult = regex.test(string);
