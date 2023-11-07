@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Using SetTimeout() function</h1>
+
+    <p id="demo"></p>
+    <p id="try"></p>
+  </body>
+  <script>
+    setTimeout(demofunction, 3000);
+
+    setTimeout(tryfunction, 3000);
+
+    function tryfunction(){
+         document.getElementById('try').innerHTML = "I am trying....";
+    }
+
+    function demofunction() {
+      document.getElementById("demo").innerHTML = "I Love You!";
+    }
+  </script>
+</html>

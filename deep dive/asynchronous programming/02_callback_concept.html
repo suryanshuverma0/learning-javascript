@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>Callback Functions</h2>
+
+    <p>The result of the calculation is:</p>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function myDisplayer(something) {
+      document.getElementById("demo").innerHTML = something;
+    }
+
+    function myCalculator(num1, num2, myCallback) {
+      let sum = num1 + num2;
+      myCallback(sum);
+    }
+
+    function myCalculator2(num1, num2, myCallback) {
+      let diff = num1 - num2;
+      myCallback(diff);
+    }
+
+    myCalculator(50, 5, myDisplayer);
+    myCalculator2(15, 5, myDisplayer); //override previous function
+  </script>
+</html>
