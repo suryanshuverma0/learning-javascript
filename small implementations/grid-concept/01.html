@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns */
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust layout for smaller screens */
+      .container {
+        grid-template-columns: 1fr; /* One column for screens with max-width: 768px */
+      }
+    }
+
+    img {
+      max-width: 100%; /* Make the image responsive */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et maximus leo, non lacinia libero. Vestibulum sodales luctus erat, et fermentum mauris consectetur nec.</p>
+    <img src="your-image.jpg" alt="Image Description">
+  </div>
+</body>
+</html>

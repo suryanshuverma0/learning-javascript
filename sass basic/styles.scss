@@ -1,0 +1,115 @@
+//importing from other files
+@import "just_try";
+
+//using mixins which groups the css propertes for reuseability
+@mixin my_sample_mixin {
+  font-size: 25px;
+  text-align: center;
+  background-color: bisque;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+//declaring variables
+$primary_1: #0ef;
+$primary_2: black;
+$primary_3: rgba(255, 255, 255, 0.4);
+$my_font_size: 42px;
+$my_padding: 15px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary_1;
+  color: $primary_2;
+}
+
+//nesting properties
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    font-size: $my_font_size;
+    padding: $my_padding;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+#p1 {
+  padding: $my_padding; //uisng variables declared
+  font: {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+  }
+
+  text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
+}
+
+#p2 {
+  color: $try_color_3;
+}
+//using mixins
+#p3 {
+  @include my_sample_mixin;
+}
+
+//using the @extend
+%commonButtonStyles {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.primaryButton {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+// Define a Sass function
+@function calculateWidth($baseWidth, $multiplier) {
+  @return $baseWidth * $multiplier;
+}
+
+// Use the function in your styles
+#p4 {
+  width: calculateWidth(200px, 9); // Output: 400px
+}
+
+@function generateGradient($color, $direction: to bottom) {
+  $gradient: linear-gradient($direction, $color, lighten($color, 20%));
+  @return $gradient;
+}
+
+// Use the function in your styles
+#p4 {
+  background: generateGradient(
+    #3498db
+  ); // Output: linear-gradient(to bottom, #3498db, #5dade2)
+
+  font-weight: 700;
+  margin: 15px;
+  padding: 10px;
+}

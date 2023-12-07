@@ -1,0 +1,85 @@
+*{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+}
+.profile-details{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+}
+.pp{
+         text-align: center
+}
+.pp img{
+         width: 240px;
+         height: 240px;
+         border-radius: 50%;
+         margin: 3px;
+         padding: 5px;
+}
+.intro{
+         text-align: center;
+}
+#profile-name{
+         text-align: center;
+         font-size:36px;
+         padding: 5px;
+         margin: 10px;
+}
+#profile-email{
+         text-align: center;
+         font-size: 26px;
+         padding: 5px;
+         margin: 8px;
+}
+#profile-bio{
+         text-align: center;
+         font-size: 24px;
+         padding: 15px;
+         margin: 12px;
+}
+.form-input{
+         margin: 75px;
+         padding: 25px;
+}
+.form{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 75px;
+         padding: 35px;
+         background-color: #0ef;
+}
+label{
+         font-size: 35px;
+}
+input{
+         width: 50%;
+         font-size: 30px;
+         padding: 15px;
+}
+#btn{
+         background-color: darkred;
+         color: white;
+         font-size: 35px;
+         padding: 15px;
+         margin: 20px;
+}
+#btn:hover{
+         background-color: brown;
+}
+#history{
+         background-color: darkred;
+         color: white;
+         font-size: 35px;
+         padding: 15px;
+         margin: 20px;
+}
+#history:hover{
+         background-color: brown;
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <h2>JavaScript Promise</h2>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function myDislplayer(some) {
+      document.getElementById("demo").innerHTML = some;
+    }
+
+    let myPromise = new Promise(function (resolve, reject) {
+      let x = prompt("enter your choice!");
+
+      if (x % 2 == 0) {
+        resolve("Hi this is correct!");
+      } else {
+        reject("This will be wrong!");
+      }
+    });
+
+    myPromise.then(
+      function (value) {
+        myDislplayer(value);
+      },
+
+      function (error) {
+        myDislplayer(error);
+      }
+    );
+  </script>
+</html>

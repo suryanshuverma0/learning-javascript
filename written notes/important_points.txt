@@ -1,0 +1,3 @@
+1.There are such things that JavaScript doesn't contain or exist but we can use such features which are avilable in the browser and we can find such featres in a particular object called "window" -> box of feature given by browser to use.
+
+2. For eg : alert() , prompt() , console() are not featres of JavaScript but given by browser to use to us.

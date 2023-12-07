@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-input">
+        <div class="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="bio">Bio:</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="Bio..."
+            required
+          ></textarea>
+
+          <label for="profile-picture-url">Profile Picture URL:</label>
+          <input
+            type="text"
+            id="profile-picture-url"
+            name="profile-picture-url"
+          />
+        <button id="btn" type="button">Update Profile</button>
+        <button id="history" type="button">See Profile</button>
+
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <div class="pp">
+          <img
+            src=""
+            alt="profile-picture"
+            id="profile-picture"
+            aria-label="pp"
+          />
+        </div>
+
+        <div class="intro">
+          <h2 id="profile-name"></h2>
+          <p id="profile-email"></p>
+          <p id="profile-bio"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

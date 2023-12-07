@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #0ef;
+}
+:root{
+         --my_color: lightgreen;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.flip-card {
+  perspective: 1000px;
+}
+.back-part,
+.flip-card {
+  width: 300px;
+  height: 420px;
+}
+.front-part {
+  width: 300px;
+  height: 300px;
+}
+
+.flip-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-part,
+.back-part {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.front-part {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.front-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.back-part {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border: 2px solid black;
+}
+.back-image{
+         text-align: center;
+}
+.back-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 4px 4px 10px var(--my_color);
+  animation: aninateBorder 2s infinite;
+}
+
+
+
+@keyframes animateBorder {
+         0% {
+           border: 2px solid var(--my_color);
+           box-shadow: 0px 0px 10px var(--my_color), 0px 0px 20px var(--my_color);
+         }
+         50% {
+           border: 2px solid var(--my_color);
+           box-shadow: 0px 0px 15px var(--my_color), 0px 0px 30px var(--my_color);
+         }
+         100% {
+           border: 2px solid var(--my_color);
+           box-shadow: 0px 0px 10px var(--my_color), 0px 0px 20px var(--my_color);
+         }
+       }
+       
+.intro {
+  text-align: center;
+}
+.intro h1{
+         font-weight: 800;
+         font-size: 36px;
+}
+.intro p{
+         font-size: 14px;
+         padding: 4px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.social a {
+  text-decoration: none;
+  color: #333;
+  padding-right: 15px;
+}
+.social a i{
+         color: #333;
+}

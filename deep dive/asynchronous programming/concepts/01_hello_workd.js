@@ -15,3 +15,7 @@ setTimeout(()=>{
          clearInterval(intervalId);
          console.log("cleared");
 } , 50000);
+
+
+//event loop brings program from side stack to main stack.
+//Javascript is a single threaded.

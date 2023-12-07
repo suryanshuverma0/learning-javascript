@@ -22,3 +22,8 @@ const b= 5;
 console.log(b);
 //b=56; this will throw error
 console.log(b);
+
+
+//The variable declared with var is global scoped but that let and const is block scoped
+//The var is from ES5  and that let and const is from ES6
+//Var add itself to the window itself but not let and const 

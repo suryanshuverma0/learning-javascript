@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #454545;
+  color: white;
+}
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: black;
+}
+.heading-container h1 {
+  font-size: 48px;
+  padding-top: 1px;
+}
+.heading-container p {
+  font-size: 28px;
+  padding: 5px;
+  font-style: italic;
+  color: goldenrod;
+}
+.body-container {
+  text-align: center;
+}
+.music-image {
+  padding: 20px;
+}
+.music-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 5px;
+}
+.music-title {
+  display: inline-block;
+}
+.music-title h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #0ef;
+  padding-bottom: 20px;
+}
+.music-title h4 {
+  font-size: 24px;
+  color: chartreuse;
+  padding-bottom: 20px;
+}
+.controls {
+  margin: 20px;
+}
+.volume-input {
+  padding: 20px;
+  margin: 15px;
+}
+/* Styling for volume range input */
+#volume {
+  width: 20%; /* Adjust the width as needed */
+  margin: 0 10px;
+  background: #4caf50; /* Color of the slider track */
+}
+
+#volume::-webkit-slider-thumb {
+  width: 40px;
+  height: 60px;
+  background: #4caf50; /* Color of the slider thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+#volume::-moz-range-thumb {
+  width: 20px;
+  height: 60px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+/* Styling for track progress range input */
+#track {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 10px;
+  background: #333; /* Color of the slider track */
+}
+
+#track::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4caf50; /* Color of the slider thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+#track::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+.buttons {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+.buttons button {
+  font-size: 40px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #45a049;
+}
