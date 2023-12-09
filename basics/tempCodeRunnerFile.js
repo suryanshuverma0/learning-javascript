@@ -1,8 +1,6 @@
-//REegular expression are used to manipulate the string.
-// //REegular expression using rerex literals
-// const string = "I am a programmer and I love JavaScript."
-// const regex = /love/;
-// const result = string.match(regex);
-// console.log(result);
-
-// const testResult = regex.test(string);
+let array1 =[33 , 55 , 67];
+// array1.push(454);
+// let mapping = array1.map((value, index , array) =>{
+//         // return value + index+ array1;
+//          console.log(value, index , array);
+// })

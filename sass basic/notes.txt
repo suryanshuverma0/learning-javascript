@@ -1,7 +1,0 @@
-npm install -g saas
-npm install --save-dev sass
-npx sass styles.scss styles.css
-npx sass --watch styles.scss styles.css
-
-
-Ww can use @if @else @endif @for @each

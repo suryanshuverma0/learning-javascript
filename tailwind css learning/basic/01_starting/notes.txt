@@ -1,5 +1,0 @@
-npm install tailwindcss -> install tailwindcss via npm
-npx tailwindcss init  -> Create a configuration fle
-npm run build -> Run the build
-
- 
