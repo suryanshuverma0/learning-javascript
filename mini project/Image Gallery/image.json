@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Rolls Royce",
+    "url": "images/car-1.jpeg",
+    "category": "Car"
+  },
+  {
+    "id": 2,
+    "title": "Ferrari",
+    "url": "images/car-2.jpeg",
+    "category": "Car"
+  },
+  {
+    "id": 3,
+    "title": "Lamborgini",
+    "url": "images/car-3.jpeg",
+    "category": "Car"
+  },
+  {
+    "id": 4,
+    "title": "BMW",
+    "url": "images/car-4.jpeg",
+    "category": "Car"
+  },
+  {
+    "id": 4,
+    "title": "Land Cruiser",
+    "url": "images/car-5.jpeg",
+    "category": "Car"
+  },
+  {
+    "id": 4,
+    "title": "Kawasaki Ninja",
+    "url": "images/bike-1.jpeg",
+    "category": "Bike"
+  },
+  {
+    "id": 4,
+    "title": "BMW",
+    "url": "images/bike-2.jpeg",
+    "category": "Bike"
+  },
+  {
+    "id": 4,
+    "title": "Royal Enfind",
+    "url": "images/bike-3.jpeg",
+    "category": "Bike"
+  },
+  {
+    "id": 4,
+    "title": "Duke",
+    "url": "images/bike-4.jpeg",
+    "category": "Bike"
+  },
+  {
+    "id": 4,
+    "title": "Hero Honda",
+    "url": "images/bike-5.jpeg",
+    "category": "Bike"
+  }
+]
