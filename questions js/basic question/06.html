@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+  </body>
+  <script>
+    function checkPalindrome() {
+      const number = prompt("Enter the number");
+      const sliceNumber = number.split("");
+      const reverseNum = [...sliceNumber].reverse(); // Create a copy of the array for reverse comparison
+      const reverseNumber = parseInt(reverseNum.join(""));
+      const detection = 0;
+      for (let i = 0; i < sliceNumber.length; i++) {
+        if (sliceNumber[i] == reverseNum[i]) {
+          detection++;
+        } else {
+          break;
+        }
+      }
+      if (detection == sliceNumber.length) {
+        alert("Palindrome detected");
+      } else {
+        alert("Sorry, not a palindrome");
+      }
+    }
+  </script>
+</html>

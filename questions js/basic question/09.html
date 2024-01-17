@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="checkPrime()">check</button>
+    <button onclick="result()">result</button>
+  </body>
+  <script>
+    //
+    /*
+          Program for Prime Numbers Using For Loop
+Algorithm to Find Prime Number Program in C
+STEP 1: Take num as input.
+
+STEP 2: Initialize a variable temp to 0.
+
+STEP 3: Iterate a “for” loop from 2 to num/2.
+
+STEP 4: If num is divisible by loop iterator, then increment temp.
+
+STEP 5: If the temp is equal to 0,
+
+    Return “Num IS PRIME”.
+
+Else,
+
+    Return “Num IS NOT PRIME”.     
+
+Pseudocode to Find Prime Number
+Start
+
+   Input num
+
+   Initialize variable temp = 0 
+
+   FOR loop = 2 to num/2 
+
+      IF num is divisible by loop
+
+         Increment temp
+
+      END IF 
+
+   END FOR      
+
+      IF temp is equal to 0
+
+         RETURN “Num IS PRIME”
+
+      END IF 
+
+      ELSE
+
+         RETURN “Num IS NOT PRIME”
+
+      END ELSE 
+
+End 
+         */
+    var temp = 0;
+    //2 3 5 7 11 13 17
+
+    function checkPrime() {
+    var number = prompt("Enter a number...");
+
+      for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+          temp++;
+        }
+      }
+    }
+    function result() {
+      if (temp == 0) {
+        alert("prime");
+      } else {
+        alert("not prime");
+      }
+    }
+  </script>
+</html>
