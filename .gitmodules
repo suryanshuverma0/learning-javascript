@@ -1,0 +1,3 @@
+[submodule "small-implementations"]
+	path = small-implementations
+	url = https://github.com/suryanshuverma0/Clock
