@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Image of the Day</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #B3B3B3;
+        
+      }
+      .img {
+        width: 260px;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img img {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        border-radius: 12PX;
+      }
+      .title {
+        margin: 20px;
+      }
+      #imageTitle {
+        font-size: 35px;
+        font-weight: 800;
+        font-style: italic;
+      }
+      .description {
+        margin: 20px;
+        padding: 0 20px;
+      }
+      #imageExplanation{
+         font-size: 21px;
+         text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img id="apodImage" alt="NASA APOD" />
+      </div>
+      <div class="title">
+        <div id="imageTitle"></div>
+      </div>
+      <div class="description">
+        <div id="imageExplanation"></div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

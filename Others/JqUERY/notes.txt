@@ -1,0 +1,4 @@
+There arre three typws of selector in jQuery They are:
+1.Element selector
+2.Class selector
+2.Id selector

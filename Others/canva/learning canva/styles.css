@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.drawing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#myCanva {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.8);
+}

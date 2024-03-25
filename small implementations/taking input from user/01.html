@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Input Value</title>
+         <style>
+                  body{
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           height: 100vh;
+                  }
+         </style>
+</head>
+<body>
+         <input type="text" id="input" placeholder="Enter the text here">
+</body>
+<script>
+         const input = document.getElementById("input");
+                  input.addEventListener("change" , (event)=>{
+                  alert(event.target.value);
+         });
+         
+</script>
+</html>

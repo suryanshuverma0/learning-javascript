@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <script src="https://unpkg.com/pdf-lib"></script>
+</head>
+<body>
+
+<button onclick="generatePDF()">Generate PDF</button>
+
+<script>
+    async function generatePDF() {
+        // Create a new PDF document
+        const { PDFDocument } = PDFLib;
+        const pdfDoc = await PDFDocument.create();
+
+        // Add a new page to the document
+        const page = pdfDoc.addPage();
+
+        // Add text to the page
+        page.drawText('Hello, this is a sample text for the PDF.', { x: 50, y: 100 });
+
+        // Save the PDF as a Blob
+        const pdfBytes = await pdfDoc.save();
+        const pdfBlob = new Blob([pdfBytes], { type: 'application/pdf' });
+
+        // Create a download link for the Blob
+        const downloadLink = document.createElement('a');
+        downloadLink.href = URL.createObjectURL(pdfBlob);
+        downloadLink.download = 'output.pdf';
+
+        // Append the link to the document and trigger the download
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+
+        // Remove the link from the document
+        document.body.removeChild(downloadLink);
+    }
+</script>
+
+</body>
+</html>

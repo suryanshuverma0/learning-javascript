@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>GeoLocation</title>
+         <style>
+                  #geoLocation{
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           height: 100vh;
+                  }
+         </style>
+</head>
+<body>
+         <p id="geoLocation"></p>
+</body>
+<script>
+         const geolcationDiv = document.getElementById("geoLocation");
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const latitude =  position.coords.latitude;
+        const longitude =  position.coords.longitude;
+        geolcationDiv.textContent = `The ${latitude} and ${longitude} coordinates`;
+      },
+      (error) => {
+        console.log("Error: ", error);
+      }
+    );
+}
+
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px;
+    }
+    #profile {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GitHub Profile Viewer</h1>
+  <input type="text" id="username" placeholder="Enter GitHub username">
+  <button onclick="fetchProfile()">Fetch Profile</button>
+  <div id="profile"></div>
+
+  <script>
+    async function fetchProfile() {
+      const username = document.getElementById('username').value;
+      const profileDiv = document.getElementById('profile');
+
+      try {
+        const response = await fetch(`https://api.github.com/users/${username}`);
+        const data = await response.json();
+
+        // Display user profile information
+        profileDiv.innerHTML = `
+          <h2>${data.name}</h2>
+          <img src="${data.avatar_url}" alt="Profile Image" width="100">
+          <p>${data.bio}</p>
+          <p>Followers: ${data.followers}</p>
+          <p>Following: ${data.following}</p>
+          <p>Public Repositories: ${data.public_repos}</p>
+        `;
+      } catch (error) {
+        profileDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
